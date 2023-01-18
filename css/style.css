@@ -1,0 +1,288 @@
+:root{
+    --main-color:#0078ff;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*header*/
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.layer{
+    background-color: rgba(0, 0,0, 0.5);
+}
+.content h1{
+    font-weight: 600;
+    font-size: 4.5rem;
+    line-height: 86px;
+}
+
+.content p{
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 60px;
+}
+.content p::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    0%{content: "D";}
+    1%{content: "De";}
+    2%{content: "Des";}
+    5%{content: "Desi";}
+    7%{content: "Desig";}
+    9%{content: "Design";}
+    11%{content: "Designe";}
+    13%{content: "Designer.";}
+    15%{content: "Designe";}
+    17%{content: "Design";}
+    19%{content: "Desig";}
+    21%{content: "Desi";}
+    23%{content: "Des";}
+    25%{content: "De";}
+    27%{content: "Dev";}
+    28%{content: "Devo";}
+    29%{content: "Devol";}
+    30%{content: "Develo";}
+    31%{content: "Develop";}
+    32%{content: "Develope";}
+    33%{content: "Developer";}
+    35%{content: "Develope";}
+    38%{content: "Develop";}
+    40%{content: "Develo";}
+    43%{content: "Devel";}
+    45%{content: "Deve";}
+    48%{content: "Dev";}
+    50%{content: "De";}
+    53%{content: "D";}
+    55%{content: "F";}
+    58%{content: "Fr";}
+    60%{content: "Fre";}
+    63%{content: "Free";}
+    65%{content: "Freel";}
+    68%{content: "Freela";}
+    70%{content: "Freelan";}
+    73%{content: "Freelanc";}
+    75%{content: "Freelance";}
+    78%{content: "Freelancer";}
+    80%{content: "Freelance";}
+    83%{content: "Freelanc";}
+    85%{content: "Freelan";}
+    88%{content: "Freela";}
+    90%{content: "Free";}
+    93%{content: "Fre";}
+    95%{content: "Fr";}
+    98%{content: "F";}
+    100%{content: "";}
+}
+/* end of header*/
+
+/* about*/
+.bar-height{
+    height: .7rem !important;
+}
+.line-blue::before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2.5px;
+    background-color: var(--main-color);
+    top: 80%;
+    left: 1;
+}
+.title-p{
+    font-weight: 600!important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    color: #1e1e1e !important;
+}
+/* about*/
+/*service */
+.title::after{
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: var(--main-color);
+    top: 75%;
+    left: 49%;
+}
+.title h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #1e1e1e;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--main-color);
+    transition: all .3s ease-in-out;
+}
+.col-content h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #1e1e1e;
+}
+.animation:hover .icon{
+    background-color: var(--main-color);
+    border: 10px solid #cde1f8;
+}
+/*service */
+/*start experience */
+
+.experience{
+    background-image: url(../img/post-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+}
+.color-layer{
+    background-color: rgba(0, 120, 255,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.experience-icon{
+    width: 70px;
+    height: 70px;
+    border: 10px solid #cde1f8;
+}
+/*end experience */
+
+/*start work */
+.p-font{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.p2-font{
+    font-size: 13px;
+    color: #4e4e4e;
+}
+.p2-font span{
+    color: var(--main-color);
+}
+.work-icon{
+    color: var(--main-color);
+}
+.work-img{
+    overflow: hidden;
+}
+.work-img img{
+    transition: all 0.6s ease-in-out;
+}
+.work-box:hover .work-img img{
+    transform: scale(1.2);
+}
+
+/*end work */
+
+.slider{
+    background-image: url(../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.btn-circle{
+    width: 10px !important;
+    height: 10px !important;
+}
+/*end slider */
+/* blog */
+.blog-time img{
+    width: 10%;
+}
+.blog-content h3{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.blog-content h3,.text-animation{
+    transition: all 0.3s ease-in-out;
+}
+.blog-content h3:hover,.text-animation:hover{
+    color: var(--main-color);
+}
+
+.float-box{
+    background-color: var(--main-color);
+    color: #ffffff;
+}
+.float-box h6{
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+}
+/*end blog */
+
+/* contact */
+
+.icon-circle{
+    border: 5px solid var(--main-color);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.address-icon{
+    color: var(--main-color);
+}
+.contact{
+    background-image: url(../img/overlay-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.blue-layer{
+    background-color: rgba(0, 120, 255,.6);
+    width: 100%;
+    height: 100%;
+}
+.contact-form button{
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 30px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.contact-form button:hover{
+    box-shadow: 0 0 0 4px #cde1f8 ;
+    background-color: rgba(0, 120, 255,.8);
+}
+.contact-form input,.contact-form textarea{
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+}
+.icon-circle:hover{
+    background-color: var(--main-color);
+    border: 5px solid #cde1f8;
+}
+.info-icon{
+    transition: all 0.3s ease-in-out;
+}
+.icon-circle:hover .info-icon{
+    color: #ffffff;
+}
+/*end contact */
+
+/*footer*/
+footer{
+    background-color: #0062d3;
+    color: #ffffff;
+}
+
